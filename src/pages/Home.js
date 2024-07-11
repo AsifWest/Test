@@ -12,7 +12,7 @@ const Home = () => {
     useEffect(() => {
         const fetchWorkouts = async () => {
             try {
-                const response = await fetch('/api/workouts', {
+                const response = await fetch('https://body-weight-master-backend.vercel.app/', {
                     headers: {
                         'Authorization': `Bearer ${user.token}`
                     }
